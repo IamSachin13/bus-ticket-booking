@@ -1,1 +1,1 @@
-web: java -jar target/busbooking.jar
+web: java -jar jar/busbooking-0.0.1-SNAPSHOT.jar
