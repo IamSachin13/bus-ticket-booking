@@ -14,7 +14,8 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**") // allow CORS on all endpoints
-                        .allowedOrigins("http://localhost:3000") // allow frontend origin
+                        .allowedOrigins("http://localhost:3000")
+                        .allowedOrigins("http://localhost:3000/AdminDashboard")// allow frontend origin
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
